@@ -1,0 +1,23 @@
+#Flash API project
+from flask import Flask
+app = Flask(_name_)
+
+@app.route("/")
+def home():
+    return """
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Background Color</title>
+    <style>
+    body {
+    background-color: lightblue; /* You can change this color */
+    }
+    </style>
+    </head>
+    <body>
+    <h1>Welcome!</h1>
+    <p>This page has a background color.</p>
+    """
+if _name=='main_':
+    app.run()
